@@ -2,11 +2,6 @@ import sys as _sys
 _sys.path.append('../')
 import pandas as pd
 
-
-def get_data_path():
-    pass  # Assuming this function is defined elsewhere
-
-
 def read_gapminder_data():
     """
     Lê o arquivo 'gapminder_full.csv' do diretório 'datasets'.
