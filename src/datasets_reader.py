@@ -11,8 +11,8 @@ def read_gapminder_data():
     """
     file_path = '../datasets/gapminder_full.csv'
     try:
-        print('teste')
-        data = pd.read_csv('../datasets/gapminder_full.csv', sep=',')
+        data = pd.read_csv(file_path, sep=',', encoding='utf-8')
+        print(f"Arquivo {file_path} lido com sucesso.")
         return data
     except FileNotFoundError:
         print(f"Erro: O arquivo {file_path} não foi encontrado.")
