@@ -25,3 +25,14 @@ def plot_average_per_capita_income_by_continent(df):
     plt.ylabel('Renda Per Capita')
     plt.legend()
     plt.show()
+
+def plot_total_population_by_continent(df):
+    life_by_cont = df.groupby(['year','continent'])['pop'].mean().unstack()
+    plt.figure(figsize=(10,5))
+    for cont in life_by_cont.columns:
+        plt.plot(life_by_cont.index, life_by_cont[cont], label=cont)
+    plt.title('Média Populacional por Continente')
+    plt.xlabel('Ano')
+    plt.ylabel('População')
+    plt.legend()
+    plt.show()
