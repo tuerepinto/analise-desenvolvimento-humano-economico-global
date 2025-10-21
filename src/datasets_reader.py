@@ -2,14 +2,14 @@ import sys as _sys
 _sys.path.append('../')
 import pandas as pd
 
-def read_gapminder_data():
+def read_gapminder_data(path):
     """
     Lê o arquivo 'gapminder_full.csv' do diretório 'datasets'.
 
     Retorna:
         pd.DataFrame: Os dados do arquivo CSV como um DataFrame do pandas.
     """
-    file_path = '../datasets/gapminder_full.csv'
+    file_path = path
     try:
         data = pd.read_csv(file_path, sep=',', encoding='utf-8')
         print(f"Arquivo {file_path} lido com sucesso.")
