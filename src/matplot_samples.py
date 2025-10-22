@@ -25,7 +25,12 @@ def plot_line_chart(group,
     plt.grid(showGrid)
     plt.show()
 
-def plot_scatter_chart (xData, yData, title = "Title", xLabel = "xLabel", yLabel = "yLabel", showGrid = True):
+def plot_scatter_chart (xData, 
+                        yData, 
+                        title = "Title", 
+                        xLabel = "xLabel", 
+                        yLabel = "yLabel", 
+                        showGrid = True):
     plt.figure(figsize=(10, 6))
     plt.scatter(xData, yData, alpha=0.6)
     plt.title(title)
