@@ -2,6 +2,7 @@ import sys as _sys
 _sys.path.append('../')
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 def plot_line_chart(group,  
